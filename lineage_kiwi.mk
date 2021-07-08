@@ -25,6 +25,9 @@ $(call inherit-product, device/huawei/kiwi/device.mk)
 # Inherit some common LineageOS stuff.
 #$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Halium
+$(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := HONOR
 PRODUCT_DEVICE := kiwi
