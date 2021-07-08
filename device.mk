@@ -131,8 +131,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8916
 
 # Doze
-PRODUCT_PACKAGES += \
-   KiwiDoze
+#PRODUCT_PACKAGES += \
+#   KiwiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -149,13 +149,13 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@1.0-service.kiwi
 
 # FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
+#PRODUCT_PACKAGES += \
+#    FlipFlap
 
 # FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+#PRODUCT_PACKAGES += \
+#    FMRadio \
+#    libfmjni
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -241,8 +241,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -330,6 +330,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # WiFi Display
-ifneq ($(QCPATH),)
-PRODUCT_BOOT_JARS += WfdCommon
-endif
+#ifneq ($(QCPATH),)
+#PRODUCT_BOOT_JARS += WfdCommon
+#endif
