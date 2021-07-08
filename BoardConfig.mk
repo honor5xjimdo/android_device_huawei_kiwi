@@ -200,3 +200,6 @@ TARGET_PROVIDES_WCNSS_QMI := true
 
 # inherit from the proprietary version
 -include vendor/huawei/kiwi/BoardConfigVendor.mk
+
+# To enable system image
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
