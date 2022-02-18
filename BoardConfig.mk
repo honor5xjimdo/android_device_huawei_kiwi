@@ -42,8 +42,7 @@ TARGET_OTA_ASSERT_DEVICE := kiwi
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
-# CMDLINES for Halium
-BOARD_KERNEL_CMDLINE += console=tty0
+
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
@@ -55,7 +54,7 @@ TARGET_KERNEL_SOURCE := kernel/huawei/kiwi
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := kiwi-64_defconfig
+TARGET_KERNEL_CONFIG := kiwi-64_halium
 
 # Audio
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
